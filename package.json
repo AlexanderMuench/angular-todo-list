@@ -8,6 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:ci": "ng build --prod --sourceMap=false --base-href /angular-todo-list/ --output-path docs",
+    "deploy": "ng deploy --base-href=/angular-todo-list/",
     "test:ci": "ng test --watch=false --code-coverage --source-map true"
   },
   "private": true,
@@ -32,7 +33,7 @@
     "@angular/cli": "~16.0.1",
     "@angular/compiler-cli": "^16.0.0",
     "@types/jasmine": "~4.3.0",
-    "angular-cli-ghpages": "^0.6.2",
+    "angular-cli-ghpages": "^1.0.6",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
