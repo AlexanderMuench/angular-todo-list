@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: |
         npm install
-        ng build --output-path docs --base-href /angular-app/
+        npm run build
