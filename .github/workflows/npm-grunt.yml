@@ -27,4 +27,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm install
-          npm run deploy
+          npm run ng -- deploy --base-href=/angular-todo-list/ --name="AlexanderMuench" --email="alexander.muench2403@gmail.com" --no-silent
