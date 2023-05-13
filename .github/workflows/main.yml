@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: build
+      run: |
+        npm install
+        npm run build:ci
+      
     - uses: actions/checkout@v3
     - name: Angular Deploy gh-pages Actions
       uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.4.0
