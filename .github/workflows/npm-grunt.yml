@@ -24,7 +24,7 @@ jobs:
 
       - name: Build
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAGE_CI_TOKEN }}
         run: |
           npm install
           npm run ng -- deploy --base-href=/angular-todo-list/ --name="AlexanderMuench" --email="alexander.muench2403@gmail.com" --no-silent
